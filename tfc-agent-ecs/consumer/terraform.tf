@@ -5,4 +5,11 @@ terraform {
       version = "~> 3.38"
     }
   }
+  cloud {
+    organization = "nw-tfc-learn"
+
+    workspaces {
+      name = "tfc-agent-ecs-consumer"
+    }
+  }
 }

@@ -239,7 +239,7 @@ resource "aws_ssm_parameter" "notification_token" {
 }
 
 resource "aws_s3_bucket" "webhook" {
-  bucket = var.prefix
+  bucket = "${var.prefix}-webhook-lambda"
   acl    = "private"
 }
 

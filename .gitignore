@@ -32,3 +32,5 @@ remote_backend.tf
 
 .DS_Store
 .vscode
+
+.idea
